@@ -111,6 +111,6 @@ describe('grand total', () => {
 		userEvent.click(mandmsCheckbox);
 		userEvent.type(vanillaInput, '1');
 
-		expect(grandTotal).toHaveTextContent('2.00');
+		expect(grandTotal).toHaveTextContent('4.00');
 	});
 });
