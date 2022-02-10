@@ -12,7 +12,7 @@ test('error response from server for submitting order', async () => {
 		)
 	);
 
-	render(<OrderConfirmation />);
+	render(<OrderConfirmation setOrderPhase={jest.fn()} />);
 
 	const alert = await screen.findByRole('alert');
 	expect(alert).toHaveTextContent(
